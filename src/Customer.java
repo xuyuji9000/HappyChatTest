@@ -1,5 +1,4 @@
-﻿package code;
-
+﻿
 
 
 public class Customer extends Object implements java.io.Serializable
