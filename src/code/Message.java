@@ -1,4 +1,5 @@
-﻿import java.io.Serializable;
+﻿package code;
+import java.io.Serializable;
 import java.util.Vector;
 
 public class Message implements Serializable {

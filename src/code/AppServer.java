@@ -1,4 +1,5 @@
-﻿import java.io.*;
+﻿package code;
+import java.io.*;
 import java.net.*;
 import java.util.*;
 

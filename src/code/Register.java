@@ -1,4 +1,5 @@
-﻿import javax.swing.*;
+﻿package code;
+import javax.swing.*;
 
 
 
