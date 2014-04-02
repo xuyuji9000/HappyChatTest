@@ -272,6 +272,13 @@ public class ServerFrame extends JFrame implements ActionListener {
 		tpServer.add("用户信息管理", pnlUser);
 		this.getContentPane().add(tpServer);
 		setVisible(true);
+		//给每一个部件命名
+		this.btnKick.setName("btn1");
+		this.btnSaveLog.setName("btn2");
+		this.btnSend.setName("btn3");
+		this.btnStop.setName("btn4");
+		this.lblIP.setName("lbl1");
+		this.lblLog.setName("lbl2");
 	}
 
 	protected void serverMessage() {
