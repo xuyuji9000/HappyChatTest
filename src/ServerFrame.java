@@ -16,7 +16,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 
 	// 服务器信息面板
 	JPanel pnlServer, pnlServerInfo;
-
+	// 标签
 	JLabel lblStatus, lblNumber, lblMax, lblServerName, lblProtocol, lblIP,
 			lblPort, lblLog;
 
@@ -43,6 +43,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 	JTextField txtNotice;
 
 	JButton btnSend, btnKick;
+	
 	
 	public String ti = "";
 	
@@ -88,6 +89,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 		lblNumber = new JLabel("当前在线人数:");
 		lblNumber.setForeground(Color.YELLOW);
 		lblNumber.setFont(new Font("宋体", 0, 12));
+		lblNumber.setName("number");
 		txtNumber = new JTextField("0 人", 10);
 		txtNumber.setBackground(Color.decode("#d6f4f2"));
 		txtNumber.setFont(new Font("宋体", 0, 12));
@@ -232,8 +234,7 @@ public class ServerFrame extends JFrame implements ActionListener {
 		spUser.setBackground(Color.decode("#d6f4f2"));
 		spUser.setFont(new Font("宋体", 0, 12));
 		// spUser.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-		spUser
-				.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		spUser.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
 		spUser.getViewport().setView(lstUser);
 
 		lblMessage.setBounds(5, 5, 100, 25);
@@ -270,28 +271,29 @@ public class ServerFrame extends JFrame implements ActionListener {
 		tpServer.setFont(new Font("宋体", 0, 12));
 		tpServer.add("服务器管理", pnlServer);
 		tpServer.add("用户信息管理", pnlUser);
+		
 		this.getContentPane().add(tpServer);
 		setVisible(true);
 		//给每一个部件命名
-		this.btnKick.setName("btn1");
-		this.btnSaveLog.setName("btn2");
-		this.btnSend.setName("btn3");
-		this.btnStop.setName("btn4");
-		this.lblIP.setName("lbl1");
-		this.lblLog.setName("lbl2");
-		this.lblMax.setName("lbl3");
-		this.lblMessage.setName("lbl4");
-		this.lblNotice.setName("lbl5");
-		this.lblNumber.setName("lbl6");
-		this.lblPort.setName("lbl7");
-		this.lblProtocol.setName("lbl8");
-		this.lblServerName.setName("lbl9");
-		this.lblStatus.setName("lbl10");
-		this.lblUser.setName("lbl11");
-		this.lblUserCount.setName("lbl12");
-		this.list.setName("list1");
-		this.lstUser.setName("list2");
-		
+//============================================================
+		//label
+		lblStatus.setName("status");
+		lblNumber.setName("number");
+		lblMax.setName("max");
+		lblServerName.setName("name");
+		lblProtocol.setName("protocol");
+		lblIP.setName("ip");
+		lblPort.setName("port");
+		lblLog.setName("log");
+		lblMessage.setName("message");
+		lblUser.setName("user");
+		lblNotice.setName("notice");
+		lblUserCount.setName("count");
+		//button
+		btnStop.setName("stop");
+		btnSaveLog.setName("save");
+		btnSend.setName("send");
+		btnKick.setName("kick");
 		
 	}
 

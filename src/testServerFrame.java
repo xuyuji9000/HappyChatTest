@@ -17,6 +17,7 @@ import java.util.regex.*;
 public class testServerFrame {
 	private FrameFixture frame;
 	
+	
 	@Before
 	public void setUp()
 	{
@@ -30,21 +31,7 @@ public class testServerFrame {
 		frame.cleanUp();
 	}
 	
-//	@Test
-//	public void testServerFrame() {
-//		setUp();
-//		Thread thread = new Thread();
-//		try{
-//			Thread.sleep(1000);
-//		}catch(InterruptedException e)
-//		{
-//			return;
-//		}
-//
-//		tearDown();
-//		
-//		fail("Not yet implemented");
-//	}
+
 	
 	public String getFile(String filePath)
 	{
@@ -52,25 +39,32 @@ public class testServerFrame {
 		str = (new WordFilter()).getFile(filePath);
 		return str;
 	}
-//	public String[] process(String filePath)
-//	{
-//		
-//		
-//	}
-//	
+
 	
+	public void testTxt(String name,String target)
+	{
+		frame.label(name).requireText(target);
+	}
 	
+	@Test
+	public void test1()
+	{
+		
+		testTxt("name", "服务器名称:");
+		
+	}
 	
-//	@Test
-//	public void testBtn2(){
-//		frame.button("btn2").click();
-//	}
-	
-	
-//	public static void main(String args[])
-//	{
-//		testServerFrame test = new testServerFrame();
-//		test.setUp();
-//	}
+	@Test
+	public void test2()
+	{
+		testTxt("protpcol", "访问协议:");
+	}
+/*
+	public static void main(String args[])
+	{
+		testServerFrame test = new testServerFrame();
+		test.setUp();
+	}
+	*/
 
 }
