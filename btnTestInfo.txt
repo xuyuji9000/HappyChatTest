@@ -1,0 +1,12 @@
+status,当前状态:;
+number,当前在线人数:;
+max,最多在线人数:;
+name,服务器名称:;
+protocol,访问协议:;
+ip,服务器IP:;
+port,服务器端口:;
+log,[服务器日志];
+message,[用户消息];
+user,[在线用户列表];
+notice,通知：;
+count,在线总人数 0 人;
