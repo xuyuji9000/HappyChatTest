@@ -279,6 +279,20 @@ public class ServerFrame extends JFrame implements ActionListener {
 		this.btnStop.setName("btn4");
 		this.lblIP.setName("lbl1");
 		this.lblLog.setName("lbl2");
+		this.lblMax.setName("lbl3");
+		this.lblMessage.setName("lbl4");
+		this.lblNotice.setName("lbl5");
+		this.lblNumber.setName("lbl6");
+		this.lblPort.setName("lbl7");
+		this.lblProtocol.setName("lbl8");
+		this.lblServerName.setName("lbl9");
+		this.lblStatus.setName("lbl10");
+		this.lblUser.setName("lbl11");
+		this.lblUserCount.setName("lbl12");
+		this.list.setName("list1");
+		this.lstUser.setName("list2");
+		
+		
 	}
 
 	protected void serverMessage() {
